@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="color-scheme" content="light dark">
+  <title>Lightweight Tabs Unloader</title>
+  <style>
+    body { font: 14px/1.5 system-ui, sans-serif; margin: 12px; max-width: 34em; }
+    label { display: block; margin: 6px 0; }
+    input[type=number] { width: 5em; }
+    h2 { font-size: 1em; margin: 18px 0 4px; }
+    p { margin: 4px 0; }
+    code, pre { font-family: ui-monospace, monospace; font-size: 12px; }
+    pre { padding: 8px; border: 1px solid GrayText; border-radius: 4px; user-select: all; overflow-x: auto; }
+    #saved { color: GrayText; }
+  </style>
+</head>
+<body>
+  <label>Unload tabs unused for
+    <input id="minutes" type="number" min="0" max="10080" step="1"> minutes
+    (0 = off)
+  </label>
+  <label><input id="skipPinned" type="checkbox"> Keep pinned tabs loaded</label>
+  <label><input id="skipAudible" type="checkbox"> Keep tabs playing sound loaded</label>
+  <p id="saved" aria-live="polite"></p>
+
+  <h2>Recommended Firefox settings</h2>
+  <p>Extensions cannot read or change these, so set them yourself in
+    <code>about:config</code> (or add them to <code>user.js</code>):</p>
+  <pre>user_pref("browser.tabs.unloadOnLowMemory", true);
+user_pref("browser.sessionstore.restore_pinned_tabs_on_demand", true);</pre>
+  <p>The first unloads tabs early when memory runs low. The second keeps pinned
+    tabs from loading at startup until you click them.</p>
+
+  <script src="options.js"></script>
+</body>
+</html>
