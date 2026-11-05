@@ -29,6 +29,15 @@ user_pref("browser.tabs.unloadOnLowMemory", true);
 user_pref("browser.sessionstore.restore_pinned_tabs_on_demand", true);
 ```
 
+Firefox grays out only tabs unloaded by hand (right-click → Unload Tab). Tabs unloaded by an add-on
+stay full color unless you also set:
+
+```js
+user_pref("browser.tabs.fadeOutUnloadedTabs", true);
+```
+
+This also grays out tabs not yet loaded after a restart.
+
 ## Develop
 
 ```bash

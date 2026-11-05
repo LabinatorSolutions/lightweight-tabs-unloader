@@ -31,6 +31,9 @@
 user_pref("browser.sessionstore.restore_pinned_tabs_on_demand", true);</pre>
   <p>The first unloads tabs early when memory runs low. The second keeps pinned
     tabs from loading at startup until you click them.</p>
+  <p>Firefox grays out only tabs you unload by hand. To gray out tabs this
+    add-on unloads too (and tabs not yet loaded after a restart):</p>
+  <pre>user_pref("browser.tabs.fadeOutUnloadedTabs", true);</pre>
 
   <script src="options.js"></script>
 </body>
