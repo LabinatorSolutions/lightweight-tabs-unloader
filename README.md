@@ -36,3 +36,7 @@ bunx web-ext lint
 bunx web-ext run
 bunx web-ext build
 ```
+
+## License
+
+AGPL-3.0. See [LICENSE](LICENSE).
