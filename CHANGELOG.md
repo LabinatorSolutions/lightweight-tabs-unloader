@@ -18,5 +18,5 @@ First release. Set the date when it is submitted to AMO.
 - Labinator icon: a browser tab with a crescent moon, on an ultramarine square.
 - README notes on the `about:config` prefs that pair well with it, including the one that grays out tabs unloaded
   by an add-on.
-- Requires Firefox 159 or newer. Permissions: `alarms` (one check per minute) and `storage` (the settings) only. No
+- Requires Firefox 159 or newer, desktop only (Firefox for Android has no `tabs.discard()`). Permissions: `alarms` (one check per minute) and `storage` (the settings) only. No
   access to tab URLs or titles, no data collection.

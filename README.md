@@ -1,10 +1,13 @@
 # Lightweight Tabs Unloader
 
-A Firefox add-on (159+) that unloads background tabs from memory once they have gone unused for a
+A Firefox desktop add-on (159+) that unloads background tabs from memory once they have gone unused for a
 set time (default 30 minutes). An unloaded tab stays in the tab strip and reloads when you click it.
 
 That is the whole feature. About 70 lines of JavaScript, no content scripts, no host permissions,
 no access to tab URLs or titles.
+
+Desktop only: Firefox for Android has no `tabs.discard()`, so the add-on could not unload anything there, and Android
+already reclaims memory from background tabs on its own.
 
 ## Never unloaded
 
