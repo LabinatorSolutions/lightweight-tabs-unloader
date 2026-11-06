@@ -1,0 +1,42 @@
+A lightweight Firefox extension that unloads background tabs from memory once they have gone unused for a set time (<strong>30 minutes</strong> by default). An unloaded tab stays in your tab strip and reloads when you click it.
+That is the whole feature: about 70 lines of JavaScript, no access to your tabs' addresses or titles, and no access to any website.
+
+💯 <strong>Free &amp; open-source</strong>
+🔓 Publicly available on GitHub:
+👉 <a href="https://github.com/LabinatorSolutions/lightweight-tabs-unloader">https://github.com/LabinatorSolutions/lightweight-tabs-unloader</a>
+Contributions, issues, and pull requests are always welcome!
+
+🎯 Why This Exists
+
+Dozens of open tabs keep using memory long after you stopped looking at them. Firefox unloads tabs on its own only when memory is already running low. This add-on unloads them on a schedule you choose, and does nothing else.
+
+✨ Key Features
+<ul><li>💤 <strong>Unloads Idle Tabs</strong> — Background tabs unused for your chosen time are unloaded by a check that runs once a minute.</li><li>⏱️ <strong>Your Timer</strong> — Set the minutes in the options; <code>0</code> turns unloading off.</li><li>📌 <strong>Keeps What Matters Loaded</strong> — Pinned tabs and tabs playing sound stay loaded (each can be switched off).</li><li>🪶 <strong>Tiny &amp; Transparent</strong> — No content scripts, no host permissions, no tab URLs or titles read.</li></ul>
+🛡️ Never Unloaded
+<ul><li>👀 The active tab of each window</li><li>📌 Pinned tabs (unless you switch it off)</li><li>🔊 Tabs playing sound (unless you switch it off)</li><li>🎥 Tabs using your camera, microphone or screen sharing</li><li>🧩 Tabs another add-on has marked as not to be unloaded</li></ul>
+🎮 How to Use
+<ol><li><strong>Install the extension</strong> — it works right away with a 30-minute timer</li><li><strong>Change the timer</strong> in <code>about:addons</code> → Lightweight Tabs Unloader → Options</li><li><strong>Click an unloaded tab</strong> to load it again</li></ol>
+🦊 Recommended Firefox Settings
+
+Extensions cannot change <code>about:config</code>, so set these yourself if you want them:
+<ul><li><code>browser.tabs.unloadOnLowMemory</code> = <code>true</code> — also unload early when memory runs low</li><li><code>browser.sessionstore.restore_pinned_tabs_on_demand</code> = <code>true</code> — pinned tabs load only when clicked after a restart</li><li><code>browser.tabs.fadeOutUnloadedTabs</code> = <code>true</code> — gray out tabs this add-on unloads</li></ul>
+🔐 Privacy Policy (Short &amp; Clear)
+<ul><li>✅ No data collection or transmission</li><li>✅ No tracking, analytics, or telemetry</li><li>✅ No external network requests</li><li>✅ All processing happens locally</li></ul>
+Permissions requested:
+<ul><li><code>alarms</code> — One check per minute</li><li><code>storage</code> — Your three settings</li></ul>
+That's it.
+🚫 No access to your tabs' addresses or titles
+🚫 No access to the websites you visit
+
+🧾 Requirements
+<ul><li>🦊 <strong>Firefox 159 or newer</strong> (desktop). Older Firefox releases carry known, unpatched security vulnerabilities.</li></ul>
+👨🏻‍🔬 Credits
+
+Developed by the team behind <strong><a href="https://labinator.com/">Labinator</a></strong>.
+
+📞 Support &amp; Issues
+<ul><li>🐞 Bug reports &amp; feature requests:
+  👉 <a href="https://github.com/LabinatorSolutions/lightweight-tabs-unloader/issues">https://github.com/LabinatorSolutions/lightweight-tabs-unloader/issues</a></li></ul>
+📜 Disclaimer
+
+This extension is <strong>not affiliated with, endorsed by, or connected to</strong> Mozilla.

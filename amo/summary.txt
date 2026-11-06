@@ -1,0 +1,1 @@
+Unloads background tabs from memory after they sit unused for a set time (30 minutes by default). They stay in the tab strip and reload when you click them. Nothing else. 100% free and open-source.

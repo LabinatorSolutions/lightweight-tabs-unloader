@@ -1,0 +1,11 @@
+No build step: the package is the plain JavaScript source in the repository (https://github.com/LabinatorSolutions/lightweight-tabs-unloader). About 70 lines across background.js and options.js. No remote code, no network requests.
+
+Permissions:
+- alarms: one alarm, once a minute, that runs the check.
+- storage: three settings (minutes, keep pinned tabs loaded, keep tabs playing sound loaded).
+No "tabs" permission: the add-on reads only tabs.query's lastAccessed, pinned, audible, sharingState and autoDiscardable fields, never URLs or titles, and calls tabs.discard.
+
+How to test:
+1. In the options (about:addons → the add-on → Options), set the timer to 1 minute.
+2. Open a few tabs, switch away from them and wait about two minutes.
+3. The background tabs are unloaded (with browser.tabs.fadeOutUnloadedTabs = true they appear grayed out); clicking one reloads it. The active tab, pinned tabs and tabs playing sound stay loaded.
