@@ -10,7 +10,7 @@ Paste-ready text for each AMO field is in this folder. Upload the zip from `web-
 | Description | `description.txt` (AMO's HTML subset, same style as the other Labinator listings) |
 | Platform | Firefox (desktop) only — not Firefox for Android |
 | Categories | Tabs |
-| Tags | Pick from AMO's list; `tabs`/`tab manager`-style and performance/memory tags if offered |
+| Tags | None. AMO's fixed tag list has nothing for tab or memory management; the Tabs category does the job |
 | Homepage | `https://labinator.com/` |
 | Support site | `https://github.com/LabinatorSolutions/lightweight-tabs-unloader` |
 | License | GNU Affero General Public License v3.0 (the same choice as the other Labinator listings) |
