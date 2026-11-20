@@ -7,7 +7,7 @@ Paste-ready text for each AMO field is in this folder. Upload the zip from `web-
 | Name | Lightweight Tabs Unloader |
 | Add-on URL | `lightweight-tabs-unloader` |
 | Summary | `summary.txt` (under the 250-character limit) |
-| Description | `description.txt` (AMO's limited Markdown: bold, links, lists, code; AMO no longer accepts HTML) |
+| Description | `description.md` (AMO's limited Markdown: bold, links, lists, inline code; no headings, no HTML) |
 | Platform | Firefox (desktop) only — not Firefox for Android |
 | Categories | Tabs |
 | Tags | None. AMO's fixed tag list has nothing for tab or memory management; the Tabs category does the job |
